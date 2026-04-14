@@ -65,9 +65,9 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Subhankar Ghosh</h2>
-                    <p class="text-primary" style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">Freelance Web &amp; App Developer</p>
-                    <p class="text-on-surface-variant" style="font-size: 1.125rem; max-width: 600px;">
+                    <h2 class="about-title">Subhankar Ghosh</h2>
+                    <p class="text-primary about-subtitle">Freelance Web &amp; App Developer</p>
+                    <p class="text-on-surface-variant about-description">
                         Focus: Helping dental clinics grow with digital solutions. I bridge the gap between clinical excellence and digital presence, ensuring your practice reaches the right patients with professional precision.
                     </p>
                     <a class="linkedin-link" href="https://www.linkedin.com/in/subhankarg2524" target="_blank">
@@ -81,8 +81,8 @@
         <!-- Problem Section -->
         <section class="section">
             <div class="container">
-                <div class="text-center" style="margin-bottom: 4rem;">
-                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Why Digital Transformation?</h2>
+                <div class="text-center section-header">
+                    <h2 class="section-title">Why Digital Transformation?</h2>
                     <p class="text-on-surface-variant">Common challenges modern clinics face in a digital-first world.</p>
                 </div>
                 <div class="bento-grid">
@@ -102,11 +102,11 @@
                         <p class="text-on-surface-variant" style="font-size: 0.875rem;">Manual phone booking is slow and prone to missed opportunities.</p>
                     </div>
                     <div class="bento-card bento-span-2 card-dark">
-                        <div style="flex: 1;">
-                            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Poor Google Visibility</h3>
-                            <p style="color: #94a3b8;">If you're not on the first page, your competitors are getting your patients.</p>
+                        <div class="bento-card-content">
+                            <h3 class="bento-card-title">Poor Google Visibility</h3>
+                            <p class="bento-card-text">If you're not on the first page, your competitors are getting your patients.</p>
                         </div>
-                        <span class="material-symbols-outlined" style="font-size: 72px; opacity: 0.3;">search</span>
+                        <span class="material-symbols-outlined bento-large-icon">search</span>
                     </div>
                 </div>
             </div>
@@ -115,8 +115,8 @@
         <!-- Services Section -->
         <section class="section services" id="services">
             <div class="container">
-                <div style="margin-bottom: 4rem;">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Tailored Services</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Tailored Services</h2>
                     <p class="text-on-surface-variant">Comprehensive digital ecosystem for your practice.</p>
                 </div>
                 <div class="services-grid">
@@ -159,10 +159,10 @@
             <div class="container features-grid">
                 <div class="features-main-content">
                     <span class="badge">Growth Engine</span>
-                    <h2 class="section-title" style="font-size: 3rem; margin-bottom: 1.5rem;">
+                    <h2 class="section-title">
                         Built to <span class="text-primary">Grow Your Clinic</span>
                     </h2>
-                    <p class="text-on-surface-variant" style="font-size: 1.125rem; margin-bottom: 3rem; max-width: 600px;">
+                    <p class="text-on-surface-variant section-description">
                         Every feature is precision-engineered to increase patient bookings, slash manual overhead, and build digital authority automatically.
                     </p>
 
@@ -212,11 +212,11 @@
                         </div>
                     </div>
 
-                    <div class="result-card" style="margin-top: 3rem; padding: 2rem; background: var(--clinical-gradient); color: white; border-radius: 1.5rem; display: flex; align-items: center; gap: 1.5rem;">
-                        <span class="material-symbols-outlined" style="font-size: 2.5rem;">trending_up</span>
+                    <div class="result-card">
+                        <span class="material-symbols-outlined result-icon">trending_up</span>
                         <div>
-                            <p style="font-size: 1.25rem; font-weight: 800; margin: 0;">The Bottom Line</p>
-                            <p style="opacity: 0.9; margin: 0;">More bookings, zero no-shows, and complete operational freedom.</p>
+                            <p class="result-title">The Bottom Line</p>
+                            <p class="result-text">More bookings, zero no-shows, and complete operational freedom.</p>
                         </div>
                     </div>
                 </div>
@@ -252,27 +252,29 @@
         </section>
 
         <!-- Stats Section -->
-        <section class="section stats">
-            <div class="container stats-grid">
-                <div class="stat-card">
-                    <span class="material-symbols-outlined">groups</span>
-                    <span class="stat-label">Patient Reach</span>
-                    <span class="stat-value">Increase Bookings by 45%</span>
-                </div>
-                <div class="stat-card">
-                    <span class="material-symbols-outlined">verified</span>
-                    <span class="stat-label">Reputation</span>
-                    <span class="stat-value">Build Digital Trust</span>
-                </div>
-                <div class="stat-card">
-                    <span class="material-symbols-outlined">bolt</span>
-                    <span class="stat-label">Efficiency</span>
-                    <span class="stat-value">Automate Operations</span>
-                </div>
-                <div class="stat-card">
-                    <span class="material-symbols-outlined">sync_alt</span>
-                    <span class="stat-label">Retention</span>
-                    <span class="stat-value">Improve Follow-ups</span>
+        <section class="section stats" id="stats-section">
+            <div class="stats-sticky-wrapper">
+                <div class="container stats-grid" id="stats-grid">
+                    <div class="stat-card">
+                        <span class="material-symbols-outlined">groups</span>
+                        <span class="stat-label">Patient Reach</span>
+                        <span class="stat-value">Increase Bookings by 45%</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="material-symbols-outlined">verified</span>
+                        <span class="stat-label">Reputation</span>
+                        <span class="stat-value">Build Digital Trust</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="material-symbols-outlined">bolt</span>
+                        <span class="stat-label">Efficiency</span>
+                        <span class="stat-value">Automate Operations</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="material-symbols-outlined">sync_alt</span>
+                        <span class="stat-label">Retention</span>
+                        <span class="stat-value">Improve Follow-ups</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -280,15 +282,15 @@
         <!-- Pricing Section -->
         <section class="section" id="pricing">
             <div class="container">
-                <div class="text-center" style="margin-bottom: 4rem;">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Transparent Pricing</h2>
+                <div class="text-center section-header">
+                    <h2 class="section-title">Transparent Pricing</h2>
                     <p class="text-on-surface-variant">Simple, professional packages for every stage of your practice.</p>
                 </div>
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <div>
                             <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Basic Website</h3>
-                            <div class="price">₹8,000 – ₹15,000</div>
+                            <div class="price">upto ₹8,000</div>
                         </div>
                         <div class="pricing-list">
                             <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Single Page Design</div>
@@ -303,7 +305,7 @@
                         <div class="recommended-badge">Recommended</div>
                         <div>
                             <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Advanced Website</h3>
-                            <div class="price">₹20,000 – ₹35,000</div>
+                            <div class="price">₹15,000 – ₹35,000</div>
                         </div>
                         <div class="pricing-list">
                             <div class="pricing-item" style="font-weight: 600;"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Everything in Basic</div>
@@ -337,12 +339,10 @@
                 <div class="contact-overlay"></div>
                 <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern Dental Clinic">
             </div>
-            <div class="container" style="max-width: 800px; position: relative; z-index: 10;">
+            <div class="container contact-container">
                 <h2 class="contact-title">Let’s Grow Your Dental Clinic</h2>
-                <b style="font-size: 1.25rem; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">Ready to take your practice to the next level? Join the digital era with custom dental tech solutions built specifically for growth.</b>
-                <br>
-                <br>
-                <button class="btn btn-primary" style="padding: 1.25rem 3rem; font-size: 1.25rem; border-radius: 20px;">
+                <p class="contact-subtitle">Ready to take your practice to the next level? Join the digital era with custom dental tech solutions built specifically for growth.</p>
+                <button class="btn btn-primary contact-btn">
                     Contact Now
                     <span class="material-symbols-outlined">arrow_forward</span>
                 </button>
@@ -366,5 +366,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        const statsSection = document.getElementById('stats-section');
+        const statsGrid = document.getElementById('stats-grid');
+        
+        function handleMobileScroll() {
+            if (window.innerWidth > 768) {
+                if (statsGrid) statsGrid.style.transform = 'none';
+                return;
+            }
+            if (!statsSection || !statsGrid) return;
+            const sectionRect = statsSection.getBoundingClientRect();
+            const progress = Math.max(0, Math.min(1, -sectionRect.top / (sectionRect.height - window.innerHeight)));
+            const scrollWidth = statsGrid.scrollWidth - window.innerWidth + 64; 
+            statsGrid.style.transform = `translateX(${-progress * scrollWidth}px)`;
+        }
+        window.addEventListener('scroll', () => requestAnimationFrame(handleMobileScroll));
+        window.addEventListener('resize', handleMobileScroll);
+        handleMobileScroll();
+    </script>
 </body>
 </html>
