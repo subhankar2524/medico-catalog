@@ -85,7 +85,7 @@
                     <h2 class="section-title">Why Digital Transformation?</h2>
                     <p class="text-on-surface-variant">Common challenges modern clinics face in a digital-first world.</p>
                 </div>
-                <div class="bento-grid">
+                <div class="bento-grid" id="problem-grid">
                     <div class="bento-card bento-span-2 card-high">
                         <span class="material-symbols-outlined text-primary">cloud_off</span>
                         <h3 style="font-size: 1.25rem;">No Online Presence</h3>
@@ -372,11 +372,16 @@
         const statsGrid = document.getElementById('stats-grid');
         const servicesSection = document.getElementById('services-section');
         const servicesGrid = document.getElementById('services-grid');
+        const problemGrid = document.getElementById('problem-grid');
+        const problemCards = problemGrid ? problemGrid.querySelectorAll('.bento-card') : [];
         
         function handleMobileScroll() {
-            if (window.innerWidth > 768) {
+            const isMobile = window.innerWidth <= 768;
+            
+            if (!isMobile) {
                 if (statsGrid) statsGrid.style.transform = 'none';
                 if (servicesGrid) servicesGrid.style.transform = 'none';
+                problemCards.forEach(card => card.style.transform = 'none');
                 return;
             }
 
@@ -395,6 +400,27 @@
                 const scrollWidth = servicesGrid.scrollWidth - window.innerWidth + 64; 
                 servicesGrid.style.transform = `translateX(${-progress * scrollWidth}px)`;
             }
+
+            // Problem Cards Scaling Focus Effect
+            const viewportCenter = window.innerHeight / 2;
+            const focusRange = window.innerHeight * 0.15; // 15% above/below center = 30% total range
+
+            problemCards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const cardCenter = rect.top + rect.height / 2;
+                const distanceToCenter = Math.abs(viewportCenter - cardCenter);
+
+                if (distanceToCenter < focusRange) {
+                    // Gradual scale up to 1.08 based on proximity to center
+                    const normalizedDistance = distanceToCenter / focusRange;
+                    const scale = 1 + (0.08 * (1 - normalizedDistance));
+                    card.style.transform = `scale(${scale})`;
+                    card.style.zIndex = "10";
+                } else {
+                    card.style.transform = 'scale(1)';
+                    card.style.zIndex = "1";
+                }
+            });
         }
         window.addEventListener('scroll', () => requestAnimationFrame(handleMobileScroll));
         window.addEventListener('resize', handleMobileScroll);
