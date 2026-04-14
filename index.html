@@ -113,47 +113,48 @@
         </section>
 
         <!-- Services Section -->
-        <section class="section services" id="services">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Tailored Services</h2>
-                    <p class="text-on-surface-variant">Comprehensive digital ecosystem for your practice.</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <span class="material-symbols-outlined service-icon">web</span>
-                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Website Development</h3>
-                        <p class="text-on-surface-variant">High-conversion websites optimized for patient acquisition and professional branding.</p>
+        <section class="section services" id="services-section">
+            <div class="services-sticky-wrapper">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Tailored Services</h2>
+                        <p class="text-on-surface-variant">Comprehensive digital ecosystem for your practice.</p>
                     </div>
-                    <div class="service-card">
-                        <span class="material-symbols-outlined service-icon">event_available</span>
-                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Booking System</h3>
-                        <p class="text-on-surface-variant">Seamless online appointment scheduling integrated directly with your clinic's workflow.</p>
-                    </div>
-                    <div class="service-card">
-                        <span class="material-symbols-outlined service-icon">smartphone</span>
-                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Mobile App Development</h3>
-                        <p class="text-on-surface-variant">Custom patient apps for loyalty, reminders, and digital medical history access.</p>
-                    </div>
-                    <div class="service-card">
-                        <span class="material-symbols-outlined service-icon">dashboard</span>
-                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Management Dashboard</h3>
-                        <p class="text-on-surface-variant">Centralized tool to track patients, revenue, and staff schedules efficiently.</p>
-                    </div>
-                    <div class="service-card">
-                        <span class="material-symbols-outlined service-icon">monitoring</span>
-                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">SEO &amp; Ranking</h3>
-                        <p class="text-on-surface-variant">Local SEO strategies to ensure your clinic dominates Google search results.</p>
-                    </div>
-                    <div class="service-card service-cta">
-                        <p style="font-size: 1.125rem; font-weight: 600;">Need a Custom Solution?</p>
-                        <button class="btn btn-cta">Let's Discuss</button>
+                    <div class="services-grid" id="services-grid">
+                        <div class="service-card">
+                            <span class="material-symbols-outlined service-icon">web</span>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Website Development</h3>
+                            <p class="text-on-surface-variant">High-conversion websites optimized for patient acquisition and professional branding.</p>
+                        </div>
+                        <div class="service-card">
+                            <span class="material-symbols-outlined service-icon">event_available</span>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Booking System</h3>
+                            <p class="text-on-surface-variant">Seamless online appointment scheduling integrated directly with your clinic's workflow.</p>
+                        </div>
+                        <div class="service-card">
+                            <span class="material-symbols-outlined service-icon">smartphone</span>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Mobile App Development</h3>
+                            <p class="text-on-surface-variant">Custom patient apps for loyalty, reminders, and digital medical history access.</p>
+                        </div>
+                        <div class="service-card">
+                            <span class="material-symbols-outlined service-icon">dashboard</span>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Management Dashboard</h3>
+                            <p class="text-on-surface-variant">Centralized tool to track patients, revenue, and staff schedules efficiently.</p>
+                        </div>
+                        <div class="service-card">
+                            <span class="material-symbols-outlined service-icon">monitoring</span>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">SEO &amp; Ranking</h3>
+                            <p class="text-on-surface-variant">Local SEO strategies to ensure your clinic dominates Google search results.</p>
+                        </div>
+                        <div class="service-card service-cta">
+                            <p style="font-size: 1.125rem; font-weight: 600;">Need a Custom Solution?</p>
+                            <button class="btn btn-cta">Let's Discuss</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features & Benefits -->
         <!-- Features & Benefits -->
         <section class="section features">
             <div class="container features-grid">
@@ -369,17 +370,31 @@
     <script>
         const statsSection = document.getElementById('stats-section');
         const statsGrid = document.getElementById('stats-grid');
+        const servicesSection = document.getElementById('services-section');
+        const servicesGrid = document.getElementById('services-grid');
         
         function handleMobileScroll() {
             if (window.innerWidth > 768) {
                 if (statsGrid) statsGrid.style.transform = 'none';
+                if (servicesGrid) servicesGrid.style.transform = 'none';
                 return;
             }
-            if (!statsSection || !statsGrid) return;
-            const sectionRect = statsSection.getBoundingClientRect();
-            const progress = Math.max(0, Math.min(1, -sectionRect.top / (sectionRect.height - window.innerHeight)));
-            const scrollWidth = statsGrid.scrollWidth - window.innerWidth + 64; 
-            statsGrid.style.transform = `translateX(${-progress * scrollWidth}px)`;
+
+            // Stats Section
+            if (statsSection && statsGrid) {
+                const sectionRect = statsSection.getBoundingClientRect();
+                const progress = Math.max(0, Math.min(1, -sectionRect.top / (sectionRect.height - window.innerHeight)));
+                const scrollWidth = statsGrid.scrollWidth - window.innerWidth + 64; 
+                statsGrid.style.transform = `translateX(${-progress * scrollWidth}px)`;
+            }
+
+            // Services Section
+            if (servicesSection && servicesGrid) {
+                const sectionRect = servicesSection.getBoundingClientRect();
+                const progress = Math.max(0, Math.min(1, -sectionRect.top / (sectionRect.height - window.innerHeight)));
+                const scrollWidth = servicesGrid.scrollWidth - window.innerWidth + 64; 
+                servicesGrid.style.transform = `translateX(${-progress * scrollWidth}px)`;
+            }
         }
         window.addEventListener('scroll', () => requestAnimationFrame(handleMobileScroll));
         window.addEventListener('resize', handleMobileScroll);
