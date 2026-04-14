@@ -1,400 +1,332 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Subhankar Ghosh | Dental Clinic Digital Solutions</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "secondary-fixed-dim": "#b2c5ff",
-                      "on-primary": "#ffffff",
-                      "on-secondary-fixed": "#001849",
-                      "surface-container-high": "#e3e8f9",
-                      "inverse-surface": "#2a303d",
-                      "surface-dim": "#d4daea",
-                      "on-primary-fixed-variant": "#00468c",
-                      "on-surface-variant": "#424752",
-                      "on-secondary": "#ffffff",
-                      "tertiary-container": "#50626a",
-                      "surface-variant": "#dde2f3",
-                      "secondary-fixed": "#dae2ff",
-                      "inverse-primary": "#a9c7ff",
-                      "secondary": "#0053cf",
-                      "outline-variant": "#c2c6d4",
-                      "on-tertiary-container": "#c9dde6",
-                      "tertiary": "#384a52",
-                      "error": "#ba1a1a",
-                      "surface-container": "#e8eeff",
-                      "outline": "#727783",
-                      "primary": "#00478d",
-                      "secondary-container": "#2c6cf0",
-                      "on-tertiary-fixed": "#0b1e24",
-                      "on-secondary-fixed-variant": "#003fa3",
-                      "on-primary-container": "#c8daff",
-                      "surface": "#f9f9ff",
-                      "surface-container-highest": "#dde2f3",
-                      "surface-tint": "#005db6",
-                      "on-error": "#ffffff",
-                      "on-error-container": "#93000a",
-                      "background": "#f9f9ff",
-                      "on-secondary-container": "#fefcff",
-                      "on-tertiary": "#ffffff",
-                      "tertiary-fixed": "#d2e6ef",
-                      "surface-container-lowest": "#ffffff",
-                      "on-surface": "#161c27",
-                      "inverse-on-surface": "#ecf0ff",
-                      "surface-bright": "#f9f9ff",
-                      "surface-container-low": "#f1f3ff",
-                      "primary-fixed-dim": "#a9c7ff",
-                      "error-container": "#ffdad6",
-                      "tertiary-fixed-dim": "#b6cad2",
-                      "on-tertiary-fixed-variant": "#374951",
-                      "on-background": "#161c27",
-                      "on-primary-fixed": "#001b3d",
-                      "primary-fixed": "#d6e3ff",
-                      "primary-container": "#005eb8"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.25rem",
-                      "lg": "0.5rem",
-                      "xl": "0.75rem",
-                      "full": "9999px"
-              },
-              "fontFamily": {
-                      "headline": ["Manrope"],
-                      "body": ["Inter"],
-                      "label": ["Inter"]
-              }
-            },
-          }
-        }
-    </script>
-<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Subhankar Ghosh | Dental Clinic Digital Solutions</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary/20">
-<!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-3xl shadow-sm dark:shadow-none">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-xl font-bold tracking-tighter text-blue-900 dark:text-blue-50">Subhankar Ghosh</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:scale-105 hover:text-blue-800 transition-all duration-300" href="#services">Services</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:scale-105 hover:text-blue-800 transition-all duration-300" href="#portfolio">Portfolio</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:scale-105 hover:text-blue-800 transition-all duration-300" href="#pricing">Pricing</a>
-<a class="bg-primary text-on-primary px-6 py-2 rounded-xl clinical-gradient font-semibold hover:scale-105 transition-transform duration-200" href="#contact">Get Started</a>
-</div>
-</div>
-</nav>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative overflow-hidden min-h-[921px] flex items-center px-8">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-15 grayscale" data-alt="high-end minimalist dental office with natural lighting, clinical blue accents, and modern technology equipment on a glass desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADAeiNz-Y2VkDPATIXS6J5ufo8l3WJjQiFJDx3c2AFM4J3sVOOE3lFDyx12sIIGSaivzSUa2Oq6uRSsAbclModDAUb7lpQuqrDHSqU_-8mP1CYWytcX8SbPPWx3VOKMC1NKBnU_OqM-y8y5cv12V0EtvBbWnRbDyMj7FhD2IBZrJT8L0cibbwW83212sWT4xbhY7c4YMEPthIhpQZUDh0jhgM3fLCu_1pIlC74pdLeGhE_izMPshzNY1GSNVDC4UDrTyMrSPZqwDy1"/>
-<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/95 to-transparent"></div>
-</div>
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10 w-full">
-<div class="space-y-8">
-<span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm tracking-wide">PREMIUM DENTAL SOLUTIONS</span>
-<h1 class="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight">
-                        Digital Solutions for <span class="text-primary">Modern Dental</span> Clinics
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Subhankar Ghosh</div>
+            <div class="nav-links">
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
+                <a class="btn-nav" href="#contact">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img alt="high-end minimalist dental office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADAeiNz-Y2VkDPATIXS6J5ufo8l3WJjQiFJDx3c2AFM4J3sVOOE3lFDyx12sIIGSaivzSUa2Oq6uRSsAbclModDAUb7lpQuqrDHSqU_-8mP1CYWytcX8SbPPWx3VOKMC1NKBnU_OqM-y8y5cv12V0EtvBbWnRbDyMj7FhD2IBZrJT8L0cibbwW83212sWT4xbhY7c4YMEPthIhpQZUDh0jhgM3fLCu_1pIlC74pdLeGhE_izMPshzNY1GSNVDC4UDrTyMrSPZqwDy1"/>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge">PREMIUM DENTAL SOLUTIONS</span>
+                    <h1 class="hero-title">
+                        Get More  <span class="text-primary">Patients</span> for Your Dental Clinic — Without Relying on Walk-ins
                     </h1>
-<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    <p class="hero-description">
                         Websites, Apps &amp; Patient Growth Systems designed to automate your practice and elevate your patient experience.
                     </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<button class="clinical-gradient text-on-primary px-8 py-4 rounded-xl text-lg font-bold hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
-                            Book Free Consultation
-                            <span class="material-symbols-outlined">calendar_today</span>
-</button>
-<button class="bg-surface-container-highest text-primary px-8 py-4 rounded-xl text-lg font-bold hover:scale-[1.02] transition-transform">
-                            View Portfolio
-                        </button>
-</div>
-</div>
-<div class="hidden md:block">
-<div class="relative">
-<div class="absolute -inset-4 bg-primary/5 rounded-3xl blur-3xl"></div>
-<img class="rounded-3xl shadow-2xl relative z-10 w-full aspect-[4/5] object-cover" data-alt="modern dentist using a digital tablet for patient consultation in a bright clinic setting with soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBopnJAVZq6AEFceaFD1eSNtrSfb-H1yBlwTG5Oj3KAAdBA6yTRgpJBt8C5g_AGrcYNo98MU4SHfhdhe598SFLZZ0_ZbCzuTV4qvIuIBjBFKM3fAz2ruZrS1C-5FdGDpf844_xCQE-ywcHH7ypXHCSxu0JpUev08NFpkrZLEIoTXGYOBHlDluvptf0BNjVw5zTboxAuMflbKOSBSCVQYOFiN5Pi43FnSH0_HPVUWZG1SailPiTPTEbVcSJiUSGG7uJphs4feBDzwwFI"/>
-</div>
-</div>
-</div>
-</section>
-<!-- About Section -->
-<section class="py-24 bg-surface-container-low" id="about">
-<div class="max-w-7xl mx-auto px-8">
-<div class="flex flex-col md:flex-row gap-16 items-center">
-<div class="w-64 h-64 flex-shrink-0 relative">
-<div class="absolute inset-0 bg-primary rounded-full blur-2xl opacity-20"></div>
-<div class="w-full h-full rounded-full border-4 border-white shadow-xl overflow-hidden relative z-10 bg-white flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-7xl" data-weight="fill">medical_services</span>
-</div>
-</div>
-<div class="space-y-6 max-w-2xl text-center md:text-left">
-<h2 class="text-4xl font-bold tracking-tight">Subhankar Ghosh</h2>
-<p class="text-2xl text-primary font-semibold">Freelance Web &amp; App Developer</p>
-<p class="text-lg text-on-surface-variant leading-relaxed">
-                            Focus: Helping dental clinics grow with digital solutions. I bridge the gap between clinical excellence and digital presence, ensuring your practice reaches the right patients with professional precision.
-                        </p>
-<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="https://www.linkedin.com/in/subhankarg2524" target="_blank">
-<span class="material-symbols-outlined">link</span>
-                            Connect on LinkedIn
+                    <div class="hero-actions">
+                        <a href="https://www.linkedin.com/in/subhankarg2524" target="_blank" class="btn-social btn-social-linkedin">
+                            Find me on LinkedIn
+                            <div class="icon-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </div>
                         </a>
-</div>
-</div>
-</div>
-</section>
-<!-- Problem Section (Bento Style) -->
-<section class="py-24 px-8">
-<div class="max-w-7xl mx-auto">
-<div class="text-center mb-16 space-y-4">
-<h2 class="text-3xl font-bold">Why Digital Transformation?</h2>
-<p class="text-on-surface-variant max-w-xl mx-auto">Common challenges modern clinics face in a digital-first world.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-<div class="md:col-span-2 bg-surface-container-high p-8 rounded-3xl space-y-4">
-<span class="material-symbols-outlined text-primary text-4xl">cloud_off</span>
-<h3 class="text-xl font-bold">No Online Presence</h3>
-<p class="text-on-surface-variant">Patients can't find your clinic when they need it most. You're invisible to local searches.</p>
-</div>
-<div class="bg-white p-8 rounded-3xl shadow-sm border border-outline-variant/10 space-y-4">
-<span class="material-symbols-outlined text-error text-4xl">trending_down</span>
-<h3 class="text-xl font-bold">Low Bookings</h3>
-<p class="text-on-surface-variant text-sm">Traditional walk-ins are declining as users switch to digital booking.</p>
-</div>
-<div class="bg-white p-8 rounded-3xl shadow-sm border border-outline-variant/10 space-y-4">
-<span class="material-symbols-outlined text-secondary text-4xl">calendar_month</span>
-<h3 class="text-xl font-bold">No Booking System</h3>
-<p class="text-on-surface-variant text-sm">Manual phone booking is slow and prone to missed opportunities.</p>
-</div>
-<div class="md:col-span-2 bg-inverse-surface text-inverse-on-surface p-8 rounded-3xl flex items-center gap-8">
-<div class="space-y-4">
-<h3 class="text-xl font-bold">Poor Google Visibility</h3>
-<p class="text-slate-400">If you're not on the first page, your competitors are getting your patients.</p>
-</div>
-<span class="material-symbols-outlined text-primary-fixed-dim text-7xl opacity-50">search</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="py-24 bg-surface-container-low" id="services">
-<div class="max-w-7xl mx-auto px-8">
-<div class="flex justify-between items-end mb-16">
-<div class="space-y-4">
-<h2 class="text-4xl font-bold">Tailored Services</h2>
-<p class="text-on-surface-variant">Comprehensive digital ecosystem for your practice.</p>
-</div>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl hover:scale-[1.02] transition-transform duration-300">
-<span class="material-symbols-outlined text-primary text-3xl mb-6 bg-primary/5 p-4 rounded-xl">web</span>
-<h3 class="text-xl font-bold mb-3">Website Development</h3>
-<p class="text-on-surface-variant leading-relaxed">High-conversion websites optimized for patient acquisition and professional branding.</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl hover:scale-[1.02] transition-transform duration-300">
-<span class="material-symbols-outlined text-primary text-3xl mb-6 bg-primary/5 p-4 rounded-xl">event_available</span>
-<h3 class="text-xl font-bold mb-3">Booking System</h3>
-<p class="text-on-surface-variant leading-relaxed">Seamless online appointment scheduling integrated directly with your clinic's workflow.</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl hover:scale-[1.02] transition-transform duration-300">
-<span class="material-symbols-outlined text-primary text-3xl mb-6 bg-primary/5 p-4 rounded-xl">smartphone</span>
-<h3 class="text-xl font-bold mb-3">Mobile App Development</h3>
-<p class="text-on-surface-variant leading-relaxed">Custom patient apps for loyalty, reminders, and digital medical history access.</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl hover:scale-[1.02] transition-transform duration-300">
-<span class="material-symbols-outlined text-primary text-3xl mb-6 bg-primary/5 p-4 rounded-xl">dashboard</span>
-<h3 class="text-xl font-bold mb-3">Management Dashboard</h3>
-<p class="text-on-surface-variant leading-relaxed">Centralized tool to track patients, revenue, and staff schedules efficiently.</p>
-</div>
-<!-- Card 5 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl hover:scale-[1.02] transition-transform duration-300">
-<span class="material-symbols-outlined text-primary text-3xl mb-6 bg-primary/5 p-4 rounded-xl">monitoring</span>
-<h3 class="text-xl font-bold mb-3">SEO &amp; Ranking</h3>
-<p class="text-on-surface-variant leading-relaxed">Local SEO strategies to ensure your clinic dominates Google search results.</p>
-</div>
-<div class="bg-primary p-8 rounded-3xl flex flex-col justify-center items-center text-center text-on-primary clinical-gradient">
-<p class="text-lg font-semibold mb-4">Need a Custom Solution?</p>
-<button class="bg-white text-primary px-6 py-3 rounded-xl font-bold w-full">Let's Discuss</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Features & Benefits -->
-<section class="py-24 px-8 overflow-hidden">
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-24 items-center">
-<div class="space-y-12">
-<div>
-<h2 class="text-4xl font-bold mb-6">World-Class Website Features</h2>
-<div class="grid grid-cols-1 gap-6">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary bg-primary/5 p-2 rounded-lg">devices</span>
-<span class="font-medium text-lg">Mobile Responsive Design</span>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary bg-primary/5 p-2 rounded-lg">map</span>
-<span class="font-medium text-lg">Google Maps Integration</span>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary bg-primary/5 p-2 rounded-lg">reviews</span>
-<span class="font-medium text-lg">Integrated Reviews System</span>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary bg-primary/5 p-2 rounded-lg">speed</span>
-<span class="font-medium text-lg">Ultra-Fast Loading Times</span>
-</div>
-</div>
-</div>
-<div>
-<h2 class="text-4xl font-bold mb-6">Patient Mobile App Highlights</h2>
-<ul class="space-y-4">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="text-on-surface-variant">Instant appointment booking &amp; history tracking</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="text-on-surface-variant">Smart push notifications for check-ups</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="text-on-surface-variant">Encrypted patient medical records</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="text-on-surface-variant">Direct clinic-to-patient secure chat</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="relative">
-<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
-<img class="rounded-[2.5rem] shadow-2xl relative z-10 border-[12px] border-surface-container-high" data-alt="sleek professional smartphone app interface showing medical dashboard and health statistics on a white desk with surgical tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVfDvr--BX9OZ4ySOeLOZLoL05XwSJrklPq79-oHrgvLRjHZqoiJuhLy-ENJbx4ll30M3oZNFQCq07N5Q8-xmYRG_BOtzfS_88XW7MMWiipmA1e2eu586nJigcW1mm8GQLxRJcKYStv_4NKFSv1r8cyAGuuujyq_0d0JEGblPY99fYYp4URIk2cfiZJpjdcm6uIu9eeG23kpaO1_ZovtT620YKQcl2lFMM2j2cXoDzRxxgu_QkVefQ0rjAZ_3R_ZHNG_RIxQJd_aIK"/>
-</div>
-</div>
-</section>
-<!-- Benefits Section (Horizontal Scroll/Static) -->
-<section class="py-24 bg-primary clinical-gradient text-on-primary">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid md:grid-cols-4 gap-12">
-<div class="text-center space-y-4">
-<span class="material-symbols-outlined text-5xl">groups</span>
-<h3 class="text-xl font-bold uppercase tracking-widest text-sm opacity-80">Patient Reach</h3>
-<p class="text-2xl font-bold">Increase Bookings by 45%</p>
-</div>
-<div class="text-center space-y-4">
-<span class="material-symbols-outlined text-5xl">verified</span>
-<h3 class="text-xl font-bold uppercase tracking-widest text-sm opacity-80">Reputation</h3>
-<p class="text-2xl font-bold">Build Digital Trust</p>
-</div>
-<div class="text-center space-y-4">
-<span class="material-symbols-outlined text-5xl">bolt</span>
-<h3 class="text-xl font-bold uppercase tracking-widest text-sm opacity-80">Efficiency</h3>
-<p class="text-2xl font-bold">Automate Operations</p>
-</div>
-<div class="text-center space-y-4">
-<span class="material-symbols-outlined text-5xl">sync_alt</span>
-<h3 class="text-xl font-bold uppercase tracking-widest text-sm opacity-80">Retention</h3>
-<p class="text-2xl font-bold">Improve Follow-ups</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Pricing Section -->
-<section class="py-24 px-8" id="pricing">
-<div class="max-w-7xl mx-auto">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold">Transparent Pricing</h2>
-<p class="text-on-surface-variant mt-4">Simple, professional packages for every stage of your practice.</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<!-- Plan 1 -->
-<div class="bg-white border border-outline-variant/20 p-8 rounded-3xl space-y-8 flex flex-col">
-<div class="space-y-2">
-<h3 class="text-xl font-bold">Basic Website</h3>
-<div class="text-3xl font-extrabold text-primary">₹8,000 – ₹15,000</div>
-</div>
-<ul class="space-y-4 flex-grow">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Single Page Design</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Contact Form</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Mobile Optimization</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Google Map Setup</li>
-</ul>
-<button class="w-full py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-colors">Select Basic</button>
-</div>
-<!-- Plan 2 -->
-<div class="bg-surface-container text-on-surface p-8 rounded-3xl space-y-8 flex flex-col relative scale-105 shadow-xl border-2 border-primary">
-<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Recommended</div>
-<div class="space-y-2">
-<h3 class="text-xl font-bold">Advanced Website</h3>
-<div class="text-3xl font-extrabold text-primary">₹20,000 – ₹35,000</div>
-</div>
-<ul class="space-y-4 flex-grow">
-<li class="flex items-center gap-2 font-semibold"><span class="material-symbols-outlined text-primary text-sm">done</span> Everything in Basic</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Online Booking System</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Custom Dental Blog</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Basic SEO Setup</li>
-</ul>
-<button class="w-full py-4 bg-primary text-on-primary clinical-gradient font-bold rounded-xl shadow-lg">Start Growth</button>
-</div>
-<!-- Plan 3 -->
-<div class="bg-white border border-outline-variant/20 p-8 rounded-3xl space-y-8 flex flex-col">
-<div class="space-y-2">
-<h3 class="text-xl font-bold">App Development</h3>
-<div class="text-3xl font-extrabold text-primary">₹25,000+</div>
-</div>
-<ul class="space-y-4 flex-grow">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Android &amp; iOS App</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Patient Portal</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Push Notifications</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Digital Health Cards</li>
-</ul>
-<button class="w-full py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-colors">Enquire Now</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Final CTA Section -->
-<section class="py-24 bg-surface-container-low text-center px-8" id="contact">
-<div class="max-w-4xl mx-auto space-y-12">
-<div class="space-y-6">
-<h2 class="text-5xl font-extrabold tracking-tight">Let’s Grow Your Dental Clinic</h2>
-<p class="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">Ready to take your practice to the next level? Join the digital era with custom dental tech solutions built specifically for growth.</p>
-</div>
-<div class="flex justify-center">
-<button class="clinical-gradient text-on-primary px-12 py-5 rounded-2xl text-xl font-bold shadow-2xl hover:scale-105 transition-transform flex items-center gap-4">
-                        Contact Now
-                        <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200/15 py-12">
-<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
-<div class="space-y-4">
-<div class="text-lg font-black text-blue-900 dark:text-blue-50">Subhankar Ghosh</div>
-<p class="text-slate-500 dark:text-slate-400 text-sm max-w-xs">Building premium digital sanctuaries for high-end dental clinics across India.</p>
-</div>
-<div class="flex flex-col md:items-end gap-4">
-<div class="flex gap-6">
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">LinkedIn</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Privacy Policy</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Terms of Service</a>
-</div>
-<p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 Subhankar Ghosh. All rights reserved. Clinical Sanctuary Design.</p>
-</div>
-</div>
-</footer>
+                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn-social btn-social-whatsapp">
+                            Chat on WhatsApp
+                            <div class="icon-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.558.925 3.31 1.414 5.099 1.415 5.517 0 10.005-4.487 10.008-10.004.002-2.673-1.04-5.186-2.935-7.082-1.895-1.897-4.408-2.936-7.081-2.938-5.517 0-10.005 4.487-10.008 10.005-.001 1.93.536 3.81 1.554 5.46l-.991 3.621 3.71-.973zm10.191-7.141c-.28-.14-.325-.166-1.157-.58-.83-.414-.972-.455-1.114-.455-.142 0-.256.12-.414.28-.158.16-.607.756-.745.912-.138.156-.276.176-.554.037-.282-.14-.72-.257-2.348-1.706-1.266-1.129-2.12-2.524-2.368-2.949-.248-.425-.027-.655.213-.893.21-.21.414-.48.621-.72.202-.24.269-.414.406-.69.136-.276.068-.518-.034-.726-.102-.208-.912-2.193-1.25-3.006-.329-.79-.663-.683-.912-.695-.228-.011-.49-.013-.751-.013-.261 0-.683.098-1.037.48-.354.383-1.353 1.321-1.353 3.221 0 1.9 1.381 3.738 1.574 3.998.193.26 2.718 4.15 6.582 5.821.92.398 1.638.636 2.197.813.924.293 1.765.252 2.428.153.74-.11 1.557-.637 1.777-1.252.219-.615.219-1.141.154-1.251-.065-.11-.239-.176-.52-.316z"/></svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-glow"></div>
+                    <img class="hero-image" alt="modern dentist using digital tablet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBopnJAVZq6AEFceaFD1eSNtrSfb-H1yBlwTG5Oj3KAAdBA6yTRgpJBt8C5g_AGrcYNo98MU4SHfhdhe598SFLZZ0_ZbCzuTV4qvIuIBjBFKM3fAz2ruZrS1C-5FdGDpf844_xCQE-ywcHH7ypXHCSxu0JpUev08NFpkrZLEIoTXGYOBHlDluvptf0BNjVw5zTboxAuMflbKOSBSCVQYOFiN5Pi43FnSH0_HPVUWZG1SailPiTPTEbVcSJiUSGG7uJphs4feBDzwwFI"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container about-content">
+                <div class="profile-img-wrapper">
+                    <div class="profile-glow"></div>
+                    <div class="profile-frame">
+                        <span class="material-symbols-outlined profile-icon">medical_services</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Subhankar Ghosh</h2>
+                    <p class="text-primary" style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">Freelance Web &amp; App Developer</p>
+                    <p class="text-on-surface-variant" style="font-size: 1.125rem; max-width: 600px;">
+                        Focus: Helping dental clinics grow with digital solutions. I bridge the gap between clinical excellence and digital presence, ensuring your practice reaches the right patients with professional precision.
+                    </p>
+                    <a class="linkedin-link" href="https://www.linkedin.com/in/subhankarg2524" target="_blank">
+                        <span class="material-symbols-outlined">link</span>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Why Digital Transformation?</h2>
+                    <p class="text-on-surface-variant">Common challenges modern clinics face in a digital-first world.</p>
+                </div>
+                <div class="bento-grid">
+                    <div class="bento-card bento-span-2 card-high">
+                        <span class="material-symbols-outlined text-primary">cloud_off</span>
+                        <h3 style="font-size: 1.25rem;">No Online Presence</h3>
+                        <p class="text-on-surface-variant">Patients can't find your clinic when they need it most. You're invisible to local searches.</p>
+                    </div>
+                    <div class="bento-card card-white">
+                        <span class="material-symbols-outlined icon-error">trending_down</span>
+                        <h3 style="font-size: 1.25rem;">Low Bookings</h3>
+                        <p class="text-on-surface-variant" style="font-size: 0.875rem;">Traditional walk-ins are declining as users switch to digital booking.</p>
+                    </div>
+                    <div class="bento-card card-white">
+                        <span class="material-symbols-outlined icon-secondary">calendar_month</span>
+                        <h3 style="font-size: 1.25rem;">No Booking System</h3>
+                        <p class="text-on-surface-variant" style="font-size: 0.875rem;">Manual phone booking is slow and prone to missed opportunities.</p>
+                    </div>
+                    <div class="bento-card bento-span-2 card-dark">
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Poor Google Visibility</h3>
+                            <p style="color: #94a3b8;">If you're not on the first page, your competitors are getting your patients.</p>
+                        </div>
+                        <span class="material-symbols-outlined" style="font-size: 72px; opacity: 0.3;">search</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div style="margin-bottom: 4rem;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Tailored Services</h2>
+                    <p class="text-on-surface-variant">Comprehensive digital ecosystem for your practice.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <span class="material-symbols-outlined service-icon">web</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Website Development</h3>
+                        <p class="text-on-surface-variant">High-conversion websites optimized for patient acquisition and professional branding.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="material-symbols-outlined service-icon">event_available</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Booking System</h3>
+                        <p class="text-on-surface-variant">Seamless online appointment scheduling integrated directly with your clinic's workflow.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="material-symbols-outlined service-icon">smartphone</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Mobile App Development</h3>
+                        <p class="text-on-surface-variant">Custom patient apps for loyalty, reminders, and digital medical history access.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="material-symbols-outlined service-icon">dashboard</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Management Dashboard</h3>
+                        <p class="text-on-surface-variant">Centralized tool to track patients, revenue, and staff schedules efficiently.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="material-symbols-outlined service-icon">monitoring</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">SEO &amp; Ranking</h3>
+                        <p class="text-on-surface-variant">Local SEO strategies to ensure your clinic dominates Google search results.</p>
+                    </div>
+                    <div class="service-card service-cta">
+                        <p style="font-size: 1.125rem; font-weight: 600;">Need a Custom Solution?</p>
+                        <button class="btn btn-cta">Let's Discuss</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features & Benefits -->
+        <section class="section">
+            <div class="container features-grid">
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">World-Class Features</h2>
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <span class="material-symbols-outlined">devices</span>
+                        </div>
+                        <span style="font-size: 1.125rem; font-weight: 500;">Mobile Responsive Design</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <span class="material-symbols-outlined">map</span>
+                        </div>
+                        <span style="font-size: 1.125rem; font-weight: 500;">Google Maps Integration</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <span class="material-symbols-outlined">reviews</span>
+                        </div>
+                        <span style="font-size: 1.125rem; font-weight: 500;">Integrated Reviews System</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <span class="material-symbols-outlined">speed</span>
+                        </div>
+                        <span style="font-size: 1.125rem; font-weight: 500;">Ultra-Fast Loading Times</span>
+                    </div>
+
+                    <h2 style="font-size: 2.5rem; margin: 3rem 0 2rem;">App Highlights</h2>
+                    <div class="benefit-list">
+                        <div class="benefit-item">
+                            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="text-on-surface-variant">Instant appointment booking &amp; history tracking</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="text-on-surface-variant">Smart push notifications for check-ups</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="text-on-surface-variant">Encrypted patient medical records</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="text-on-surface-variant">Direct clinic-to-patient secure chat</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <img class="feature-img" alt="medical mobile app interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVfDvr--BX9OZ4ySOeLOZLoL05XwSJrklPq79-oHrgvLRjHZqoiJuhLy-ENJbx4ll30M3oZNFQCq07N5Q8-xmYRG_BOtzfS_88XW7MMWiipmA1e2eu586nJigcW1mm8GQLxRJcKYStv_4NKFSv1r8cyAGuuujyq_0d0JEGblPY99fYYp4URIk2cfiZJpjdcm6uIu9eeG23kpaO1_ZovtT620YKQcl2lFMM2j2cXoDzRxxgu_QkVefQ0rjAZ_3R_ZHNG_RIxQJd_aIK"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section stats">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <span class="material-symbols-outlined">groups</span>
+                    <span class="stat-label">Patient Reach</span>
+                    <span class="stat-value">Increase Bookings by 45%</span>
+                </div>
+                <div class="stat-card">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span class="stat-label">Reputation</span>
+                    <span class="stat-value">Build Digital Trust</span>
+                </div>
+                <div class="stat-card">
+                    <span class="material-symbols-outlined">bolt</span>
+                    <span class="stat-label">Efficiency</span>
+                    <span class="stat-value">Automate Operations</span>
+                </div>
+                <div class="stat-card">
+                    <span class="material-symbols-outlined">sync_alt</span>
+                    <span class="stat-label">Retention</span>
+                    <span class="stat-value">Improve Follow-ups</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="section" id="pricing">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Transparent Pricing</h2>
+                    <p class="text-on-surface-variant">Simple, professional packages for every stage of your practice.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Basic Website</h3>
+                            <div class="price">₹8,000 – ₹15,000</div>
+                        </div>
+                        <div class="pricing-list">
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Single Page Design</div>
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Contact Form</div>
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Mobile Optimization</div>
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Google Map Setup</div>
+                        </div>
+                        <button class="btn btn-outline" style="width: 100%;">Select Basic</button>
+                    </div>
+
+                    <div class="pricing-card pricing-featured">
+                        <div class="recommended-badge">Recommended</div>
+                        <div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Advanced Website</h3>
+                            <div class="price">₹20,000 – ₹35,000</div>
+                        </div>
+                        <div class="pricing-list">
+                            <div class="pricing-item" style="font-weight: 600;"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Everything in Basic</div>
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Online Booking System</div>
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Custom Dental Blog</div>
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Basic SEO Setup</div>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%; box-shadow: 0 10px 15px -3px rgba(0, 71, 141, 0.3);">Start Growth</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">App Development</h3>
+                            <div class="price">₹25,000+</div>
+                        </div>
+                        <div class="pricing-list">
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Android &amp; iOS App</div>
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Patient Portal</div>
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Push Notifications</div>
+                            <div class="pricing-item"><span class="material-symbols-outlined text-primary" style="font-size: 1rem;">done</span> Digital Health Cards</div>
+                        </div>
+                        <button class="btn btn-outline" style="width: 100%;">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="section contact" id="contact">
+            <div class="container" style="max-width: 800px;">
+                <h2 class="contact-title">Let’s Grow Your Dental Clinic</h2>
+                <p class="text-on-surface-variant" style="font-size: 1.25rem; margin-bottom: 3rem;">Ready to take your practice to the next level? Join the digital era with custom dental tech solutions built specifically for growth.</p>
+                <button class="btn btn-primary" style="padding: 1.25rem 3rem; font-size: 1.25rem; border-radius: 20px;">
+                    Contact Now
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">Subhankar Ghosh</div>
+                <p style="color: #64748b; font-size: 0.875rem; max-width: 320px;">Building premium digital sanctuaries for high-end dental clinics across India.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <p class="copyright">© 2024 Subhankar Ghosh. All rights reserved. Clinical Sanctuary Design.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
